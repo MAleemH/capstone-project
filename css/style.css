@@ -1,0 +1,28 @@
+/* CSS for mobile version */
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+/* intro section */
+
+#intro {
+  background-image: url('../images/gray-bg.jpg');
+}
+
+.welcome-note,
+h1 {
+  color: #ec5242;
+}
+
+/* main program */
+
+.program-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.programs {
+  display: flex;
+  flex-direction: row;
+}
