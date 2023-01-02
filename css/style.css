@@ -11,8 +11,15 @@ body {
 }
 
 .welcome-note,
+.program-title,
 h1 {
   color: #ec5242;
+}
+
+.intro-description {
+  border: 3px solid white;
+  font-size: 15px;
+  padding: 10px;
 }
 
 /* main program */
@@ -20,9 +27,32 @@ h1 {
 .program-section {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  background-image: url('../images/black-bg.jpg');
+  color: white;
 }
 
 .programs {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 10px;
+  gap: 10px;
+  background-color: rgba(107, 163, 196, 0.2);
+  width: 100%;
+  margin: 5px;
+  height: 80px;
+}
+
+.program-image {
+  width: 40px;
+  height: 40px;
+  filter: invert(100%);
+}
+
+.btn {
+  color: white;
+  background-color: #ec5242;
+  height: 70px;
 }
