@@ -12,6 +12,7 @@ body {
 
 .welcome-note,
 .program-title,
+.flex-item-ii,
 h1 {
   color: #ec5242;
 }
@@ -78,4 +79,17 @@ h1 {
   color: white;
   background-color: #ec5242;
   height: 70px;
+}
+
+/* Featured Speakers */
+
+.flex-item-i,
+.flex-item-ii,
+.flex-item-iii {
+  margin: 0%;
+}
+
+.flex-item-ii,
+.flex-item-iii {
+  font-size: 12px;
 }
