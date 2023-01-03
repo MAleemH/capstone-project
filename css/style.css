@@ -10,6 +10,90 @@ body {
   background-image: url('../images/gray-bg.jpg');
 }
 
+.logo {
+  display: none;
+}
+
+body.active {
+  background: #272a31;
+  overflow-y: hidden;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+  background-color: #272a31;
+}
+
+.nav-options-ul {
+  display: none;
+}
+
+.hamburger {
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+  background-color: white;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+  background-color: white;
+}
+
+.nav-menu {
+  position: fixed;
+  list-style: none;
+  top: -5%;
+  left: -1000%;
+  gap: 0;
+  flex-direction: column;
+  background-color: #272a31;
+  opacity: 0.9;
+  width: 100%;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  color: #fff;
+  font-weight: 60;
+  font-size: 32px;
+  line-height: 44px;
+  transition: 0.1s;
+  height: 100vh;
+  padding-top: 100px;
+}
+
+.nav-menu * {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-options {
+  margin: 16px 0;
+}
+
+.nav-menu.active {
+  left: 0;
+}
+
 .welcome-note,
 .program-title,
 .flex-item-ii,
