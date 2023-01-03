@@ -35,20 +35,43 @@ h1 {
 .programs {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
+  list-style: none;
   font-size: 10px;
   gap: 10px;
   background-color: rgba(107, 163, 196, 0.2);
   width: 100%;
   margin: 5px;
   height: 80px;
+  padding: 5px;
+}
+
+.list-item-i {
+  width: 50px;
+}
+
+.list-item-ii {
+  width: 110px;
+}
+
+.list-item-iii {
+  width: 300px;
 }
 
 .program-image {
   width: 40px;
   height: 40px;
   filter: invert(100%);
+}
+
+.program-title {
+  margin: 0%;
+}
+
+.program-description {
+  color: #d3d3d3;
+  margin: 0%;
 }
 
 .btn {
