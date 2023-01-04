@@ -248,6 +248,8 @@ h1 {
     color: #344563;
   }
 
+  /* programs */
+
   .programs {
     display: none;
   }
@@ -336,5 +338,4 @@ h1 {
     font-size: 11px;
     color: #6b6a6a;
   }
-
 }
