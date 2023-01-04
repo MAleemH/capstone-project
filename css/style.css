@@ -177,3 +177,54 @@ h1 {
 .flex-item-iii {
   font-size: 12px;
 }
+
+/* CSS for desktop version */
+
+@media only screen and (min-width: 768px) {
+  #intro {
+    background-image: url('../images/dt-intro-bg.jpg');
+    background-size: cover;
+  }
+
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 400px;
+    align-items: center;
+    height: 72px;
+  }
+
+  .logo {
+    display: flex;
+    width: 63px;
+    height: 60px;
+    border-radius: 50%;
+  }
+
+  .nav-options-ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  .nav-options-ul-li-a {
+    text-decoration: none;
+    color: #344563;
+  }
+}
