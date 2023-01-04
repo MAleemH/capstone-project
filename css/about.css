@@ -1,7 +1,11 @@
+/* css for mobile */
+
 .card-img {
   object-fit: cover;
   opacity: 0.3;
 }
+
+/* footer */
 
 .partner-section {
   background: #272a31;
@@ -28,3 +32,5 @@
   font-size: 11px;
   color: #6b6a6a;
 }
+
+/* css for desktop */
