@@ -4,6 +4,10 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+header {
+  display: none;
+}
+
 /* intro section */
 
 #intro {
@@ -200,6 +204,23 @@ h1 {
 /* CSS for desktop version */
 
 @media only screen and (min-width: 768px) {
+  /* header */
+
+  header {
+    display: block;
+  }
+
+  .header {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-right: 80px;
+    background-color: #272a31;
+    color: #d3d3d3;
+  }
+
   /* intro */
   #intro {
     background-image: url('../images/dt-intro-bg.jpg');
@@ -223,6 +244,7 @@ h1 {
     gap: 400px;
     align-items: center;
     height: 72px;
+    background-color: white;
   }
 
   .logo {
