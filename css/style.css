@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/cocogoose');
+
 /* CSS for mobile version */
 
 body {
@@ -21,6 +23,10 @@ header {
 body.active {
   background: #272a31;
   overflow-y: hidden;
+}
+
+a:hover {
+  color: #ec5242;
 }
 
 .navbar {
@@ -47,6 +53,7 @@ body.active {
   display: block;
   position: relative;
   z-index: 1;
+  padding: 10px;
 }
 
 .hamburger.active .bar:nth-child(2) {
@@ -74,9 +81,9 @@ body.active {
   opacity: 0.9;
   width: 100%;
   text-align: left;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'COCOGOOSE', sans-serif;
   font-style: normal;
-  color: #fff;
+  color: #d3d3d3;
   font-weight: 60;
   font-size: 32px;
   line-height: 44px;
@@ -105,10 +112,32 @@ h1 {
   color: #ec5242;
 }
 
+h2,
+p {
+  color: #272a31;
+}
+
+.dt-heading {
+  display: none;
+}
+
+.mob-heading {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.welcome-note {
+  font-size: 20px;
+  margin: 0%;
+  padding-top: 30px;
+}
+
 .intro-description {
   border: 3px solid white;
   font-size: 15px;
   padding: 10px;
+  margin: 20px 0 20px 0;
 }
 
 /* main program */
@@ -126,7 +155,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   background-image: url('../images/black-bg.jpg');
-  color: white;
+  color: #d3d3d3;
 }
 
 .programs {
@@ -211,6 +240,12 @@ h1 {
 /* CSS for desktop version */
 
 @media only screen and (min-width: 768px) {
+  #intro {
+    height: 700px;
+    background-image: url('../images/dt-intro-bg.jpg');
+    background-size: cover;
+  }
+
   /* header */
 
   header {
@@ -229,9 +264,8 @@ h1 {
   }
 
   /* intro */
-  #intro {
-    background-image: url('../images/dt-intro-bg.jpg');
-    background-size: cover;
+  .mob-heading {
+    display: none;
   }
 
   .hamburger {
@@ -251,6 +285,8 @@ h1 {
     gap: 400px;
     align-items: center;
     height: 72px;
+    padding: 0 110px 0 110px;
+    margin: auto;
     background-color: white;
   }
 
@@ -266,7 +302,7 @@ h1 {
     flex-direction: row;
     gap: 50px;
     list-style: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'COCOGOOSE', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -275,6 +311,28 @@ h1 {
   .nav-options-ul-li-a {
     text-decoration: none;
     color: #344563;
+  }
+
+  .welcome {
+    padding: 100px;
+  }
+
+  .welcome-note {
+    font-size: 35px;
+  }
+
+  .dt-heading {
+    display: block;
+    font-family: 'COCOGOOSE', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .intro-description {
+    width: 600px;
+    color: #272a31;
+    background-color: #d3d3d3;
   }
 
   /* programs */
@@ -289,10 +347,15 @@ h1 {
 
   /* courses */
 
+  .course-heading {
+    padding-top: 20px;
+  }
+
   .dt-courses {
     display: flex;
     flex-direction: row;
     gap: 10px;
+    padding: 50px;
   }
 
   .dt-course-detail {
@@ -310,9 +373,15 @@ h1 {
     text-transform: uppercase;
     word-spacing: 2px;
     font-size: 14px;
+    padding-bottom: 20px;
   }
 
   /* instructors */
+
+  #speakers {
+    color: #272a31;
+    font-family: 'COCOGOOSE', sans-serif;
+  }
 
   .instructors-list {
     display: flex;
@@ -356,6 +425,12 @@ h1 {
     gap: 50px;
   }
 
+  .partner-heading {
+    color: #d3d3d3;
+    font-family: 'COCOGOOSE', sans-serif;
+    font-size: 20px;
+  }
+
   .partners {
     display: flex;
     flex-direction: row;
@@ -366,8 +441,14 @@ h1 {
     color: #d3d3d3;
   }
 
+  .partners-list {
+    color: #d3d3d3;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
   .footer-description {
-    font-size: 11px;
+    font-size: 15px;
     color: #6b6a6a;
   }
 }
