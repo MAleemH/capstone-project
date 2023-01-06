@@ -58,7 +58,7 @@ const SpeakersList = [
 
 for (let i = 0; i < SpeakersList.length; i += 1) {
   speakersCards.innerHTML += `
-  <div class="instructor d-flex flex-row align-items-start my-2">
+  <div class="instructor">
       <div class="p-2 mt-1">
           <img class="rounded" src="images/${SpeakersList[i].imagelink}" alt="Instructor-Image" height="110px" width="110px">
       </div>
