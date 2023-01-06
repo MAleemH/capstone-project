@@ -23,6 +23,10 @@ body.active {
   overflow-y: hidden;
 }
 
+a:hover {
+  color: #ec5242;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -242,17 +246,32 @@ p {
   .nav-options-ul {
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    align-items: center;
+    gap: 40px;
     list-style: none;
     font-family: 'COCOGOOSE', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
+    padding: 0%;
   }
 
   .nav-options-ul-li-a {
     text-decoration: none;
     color: #344563;
+  }
+
+  .campaign {
+    border: 3px solid #ec5242;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cc {
+    color: #ec5242;
+    padding: 7px;
   }
 
   .welcome {
@@ -326,10 +345,6 @@ p {
 
   #footer {
     background: #272a31;
-  }
-
-  .footer-logo {
-    background-color: white;
   }
 
   .footer-description {

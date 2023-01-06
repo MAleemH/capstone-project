@@ -64,7 +64,7 @@ for (let i = 0; i < SpeakersList.length; i += 1) {
       </div>
       <div class="d-flex flex-column p-2 instructor-detail">
           <p class="flex-item-i fw-bold">${SpeakersList[i].speakername}</p>
-          <p class="flex-item-ii"><i>${SpeakersList[i].desc1}</i></p>
+          <p class="flex-item-ii fw-bold"><i>${SpeakersList[i].desc1}</i></p>
           <p class="flex-item-iii">${SpeakersList[i].desc2}</p>
       </div>
   </div>
