@@ -216,7 +216,7 @@ h1 {
     flex-direction: row;
     justify-content: flex-end;
     gap: 10px;
-    padding-right: 80px;
+    padding-right: 110px;
     background-color: #272a31;
     color: #d3d3d3;
   }
@@ -257,12 +257,12 @@ h1 {
   .nav-options-ul {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 50px;
     list-style: none;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 18px;
   }
 
   .nav-options-ul-li-a {
